@@ -10,7 +10,7 @@ mongoose.Promise = global.Promise
 mongoose.connect('mongo://db/mydb')
 
 // Teste
-// server.get('/', (req, res, next) => res.send('Backend'))
+server.get('/', (req, res, next) => res.send('Backend'))
 
 // Middlewares
 server.use(bodyParser.urlencoded({extended:true}))
