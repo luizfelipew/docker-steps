@@ -7,7 +7,7 @@ const cors = require('cors')
 
 // Database
 mongoose.Promise = global.Promise
-mongoose.connect('mongo://db/mydb')
+mongoose.connect('mongodb://db/mydb',  {useNewUrlParser: true})
 
 // Teste
 server.get('/', (req, res, next) => res.send('Backend'))
